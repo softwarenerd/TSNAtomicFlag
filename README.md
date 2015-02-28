@@ -19,21 +19,29 @@ If the call to trySet successfully set the atomic flag, YES is returned; otherwi
 
 Clearing TSNAtomicFlag
 ----------------------
-<code>
+```
 if ([atomicFlag tryClear])
 {
     NSLog(@"The flag was cleared!");
 }
-</code>
+```
 If the call to tryClear successfully cleared the atomic flag, YES is returned; otherwise, NO is returned to indicate that the atomic flag was already clear.
 
 Testing TSNAtomicFlag
 ---------------------
+As a convenience, you may ask a TSNAtomicFlag whether it is set or whether it is clear:
+
+Test for set:
+```
 if ([atomicFlag isSet])
 {
     NSLog(@"The flag is set!");
 }
+```
 
+
+Test for clear:
+```
 if ([atomicFlag isClear])
 {
     NSLog(@"The flag is clear!");
