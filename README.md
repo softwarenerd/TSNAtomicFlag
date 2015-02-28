@@ -1,7 +1,7 @@
 TSNAtomicFlag
 =============
 
-TSNAtomicFlag is a thread-safe boolean for use in multi-threaded applications.
+TSNAtomicFlag is a thread-safe boolean.
 
     TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];
     if ([atomicFlag trySet])
