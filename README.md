@@ -3,8 +3,8 @@ TSNAtomicFlag
 
 TSNAtomicFlag is a utility class that provides a lockless atomic flag for use in your OS X and iOS projects. The principle advantage of TSNAtomicFlag over other techniques is that it is super simple to use.
 
-Allocating a TSNAtomicFlag
---------------------------
+Allocating TSNAtomicFlag
+------------------------
 ```
 TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];</code>
 ```
