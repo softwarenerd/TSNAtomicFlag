@@ -6,7 +6,7 @@ TSNAtomicFlag is a utility class that provides a lockless atomic flag for use in
 Allocating TSNAtomicFlag
 ------------------------
 ```
-TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];</code>
+TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];
 ```
 
 Setting TSNAtomicFlag
@@ -31,7 +31,7 @@ If the call to tryClear successfully cleared the atomic flag, YES is returned; o
 
 Testing TSNAtomicFlag
 ---------------------
-As a convenience, you may ask a TSNAtomicFlag whether it is set or whether it is clear:
+As a convenience, you may ask a TSNAtomicFlag whether it is set or whether it is clear.
 
 Test for set:
 ```
@@ -40,7 +40,6 @@ if ([atomicFlag isSet])
     NSLog(@"The flag is set!");
 }
 ```
-
 
 Test for clear:
 ```
@@ -56,4 +55,4 @@ TSNAtomicFlag is released under an MIT license, meaning you're free to use it in
 
 Feedback
 --------
-If you have any questions about, suggestions for, or contributions to TSNAtomicFlag, please [contact me](mailto:brianlambert@softwarenerd.org).
+If you have any questions, suggestions, or contributions to TSNAtomicFlag, please [contact me](mailto:brianlambert@softwarenerd.org).
