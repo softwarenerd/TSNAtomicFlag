@@ -3,6 +3,16 @@ TSNAtomicFlag
 
 TSNAtomicFlag is a utility class that provides a lockless atomic flag for use in your OS X and iOS projects. The principle advantage of TSNAtomicFlag over other techniques is that it is super simple to use.
 
+Using TSNAtomicFlag
+------------------------
+Simply add TSNAtomicFlag to your podfile.
+```
+pod 'TSNAtomicFlag'
+```
+And install it using:
+```
+pod install
+```
 Allocating TSNAtomicFlag
 ------------------------
 ```
