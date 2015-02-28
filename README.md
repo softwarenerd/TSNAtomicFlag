@@ -5,7 +5,9 @@ TSNAtomicFlag is a utility class that provides a lockless atomic flag for use in
 
 Allocating a TSNAtomicFlag
 --------------------------
-<code>TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];</code>
+```
+TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];</code>
+```
 
 Setting TSNAtomicFlag
 ---------------------
