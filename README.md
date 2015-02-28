@@ -46,6 +46,7 @@ if ([atomicFlag isClear])
 {
     NSLog(@"The flag is clear!");
 }
+```
     
 License
 -------
