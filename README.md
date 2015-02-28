@@ -1,25 +1,41 @@
 TSNAtomicFlag
 =============
 
-TSNAtomicFlag is a thread-safe boolean.
+TSNAtomicFlag is a utility class that provides a lockless atomic flag for use in your OS X and iOS projects. The principle advantage of TSNAtomicFlag over other techniques is that it is super simple to use.
 
-    TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];
-    if ([atomicFlag trySet])
-    {
-        NSLog(@"The flag was set!");
-    }
-    if ([atomicFlag isSet])
-    {
-        NSLog(@"The flag is set!");
-    }
-    if ([atomicFlag tryClear])
-    {
-        NSLog(@"The flag was cleared!");
-    }
-    if ([atomicFlag isClear])
-    {
-        NSLog(@"The flag is clear!");
-    }
+Allocating a TSNAtomicFlag
+--------------------------
+<code>TSNAtomicFlag * atomicFlag = [[TSNAtomicFlag alloc] init];</code>
+
+Setting an atomic flag. If the call to trySet successfully set the atomic flag, YES is returned; otherwise, NO is returned to indicate that the atomic flag was already set.
+
+<code>
+if ([atomicFlag trySet]) 
+{
+    NSLog(@"The flag was set!");
+}
+</code>
+
+Clearing an atomic flag. If the call to tryClear successfully cleared the atomic flag, YES is returned; otherwise, NO is returned to indicate that the atomic flag was already clear.
+
+<code>
+if ([atomicFlag tryClear])
+{
+    NSLog(@"The flag was cleared!");
+}
+</code>
+
+Testing an atomic flag:
+
+if ([atomicFlag isSet])
+{
+    NSLog(@"The flag is set!");
+}
+
+if ([atomicFlag isClear])
+{
+    NSLog(@"The flag is clear!");
+}
     
 TSNAtomicFlag is released under an MIT license, meaning you're free to use it in both closed and open source projects. However, even in a closed source project, please include a publicly-accessible copy of TSNAtomicFlag's copyright notice, which you can find in the LICENSE file.
 
