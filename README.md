@@ -9,21 +9,21 @@ Allocating a TSNAtomicFlag
 
 Setting TSNAtomicFlag
 ---------------------
-<code>
+```
 if ([atomicFlag trySet]) 
 {
     NSLog(@"The flag was set!");
 }
-</code>
+```
 If the call to trySet successfully set the atomic flag, YES is returned; otherwise, NO is returned to indicate that the atomic flag was already set.
 
 Clearing TSNAtomicFlag
 ----------------------
 <code>
-if ([atomicFlag tryClear])\
-{\
-    NSLog(@"The flag was cleared!");\
-}\
+if ([atomicFlag tryClear])
+{
+    NSLog(@"The flag was cleared!");
+}
 </code>
 If the call to tryClear successfully cleared the atomic flag, YES is returned; otherwise, NO is returned to indicate that the atomic flag was already clear.
 
